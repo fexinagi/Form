@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" type="image/png" href="./assest/images/background.png">
+</head>
+<body>
+    <main class="main">
+        <div class="main__left">
+            <img class="main__left--img" src="./assest/images/background.webp" alt="Background">
+        </div>
+        <div class="main__right">
+            <div class="main__right--top">
+                <img class="main__right--top--logo" src="./assest/images/background.webp" alt="Logo">
+                <h3 class="main__right--top--title">Sign up</h3>
+            </div>
+            <form class="main__right--form">
+                <div class="main__right--form--div">
+                    <input type="text" class="main__right--form--div--input" placeholder="Name">
+                    <input type="text" class="main__right--form--div--input" placeholder="Surname">
+                </div>
+                <input type="text" class="main__right--form--input" placeholder="Email">
+                <input type="password" class="main__right--form--input" placeholder="Password">
+                <input type="password" class="main__right--form--input" placeholder="Confirm Password">
+                <div class="main__right--form--terms">
+                    <input type="checkbox" class="main__right--form--terms-term">
+                    <p for="terms">I agree to the <a href="#" id="openTermsOfService" class="main__right--form--terms--modal">Terms of Service</a> and <a href="#" id="openPrivacyPolicy" class="main__right--form--terms--modal">Privacy Policy</a></p>
+                </div>
+                <button type="submit" class="main__right--form--submit">Sign up</button>
+                <button type="submit" id="signInButton" class="main__right--form--button">Sign in</button>
+            </form>
+        </div>
+
+        <section class="modal hidden">
+            <button class="modal__button">x</button>
+
+            <div class="modal__text">
+                <h3 class="modal__text--title">Terms of Service</h3>
+                <p class="modal__text--subtitle">
+                    1. Acceptance of Terms:
+                    By using our service, you agree to follow these terms. If you don’t agree, please don’t use the service.
+                </p>
+                <p class="modal__text--subtitle">
+                    2. Use of the Service:
+                    You can use the service for personal, non-commercial purposes. You’re responsible for any activity under your account.
+                </p>
+                <p class="modal__text--subtitle">
+                    3. Privacy:
+                    We respect your privacy and only collect information needed to provide the service. We will not share your personal information without your consent unless required by law. 
+                </p>
+                <p class="modal__text--subtitle">
+                    4. Content:
+                    You are responsible for the content you create or share. Don’t post illegal, harmful, or offensive content.
+                </p>
+                <p class="modal__text--subtitle">
+                    5. Account Security:
+                    Keep your account information safe. If your account is compromised, let us know immediately.
+                </p>
+                <p class="modal__text--subtitle">                                        
+                    6. Changes to the Service:
+                    We can update or stop the service at any time, but we’ll notify you in advance when possible.
+                </p>
+                <p class="modal__text--subtitle">                                      
+                    7. Termination:
+                    We reserve the right to suspend or delete your account if you violate these terms.
+                </p>
+                <p class="modal__text--subtitle">
+                    8. Liability:
+                    We are not responsible for any damages or losses that result from using the service.
+                </p>
+                <p class="modal__text--subtitle">
+                    9. Disputes:
+                    If there are disputes, we’ll try to resolve them quickly and fairly.
+                </p>
+            </div>
+        </section>
+
+        <div class="overlay hidden"></div>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
